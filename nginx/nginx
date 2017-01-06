@@ -1,0 +1,11 @@
+case $1 in
+	restart):
+		/usr/local/nginx/sbin/nginx -s reload
+		;;
+	stop):
+		/usr/local/nginx/sbin/nginx -s stop
+		;;
+	*):
+		/usr/local/nginx/sbin/nginx
+		 ;;
+esac
